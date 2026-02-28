@@ -4,9 +4,9 @@ from docx.shared import Mm
 from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.enum.table import WD_ROW_HEIGHT_RULE
 
-#設定(入力フォルダ、出力フォルダのパスを入力してください)
-IMAGE_FOLDER = r""
-OUTPUT_FILE = r""
+#設定
+IMAGE_FOLDER = "images"
+OUTPUT_FILE = "album.docx"
 
 ROWS = 3
 COLS = 3
