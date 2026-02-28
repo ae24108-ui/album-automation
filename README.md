@@ -1,4 +1,4 @@
-# Album-Automation
+# album-automation
 > 画像フォルダからWordアルバムを自動生成するPythonツール
 
 ---
