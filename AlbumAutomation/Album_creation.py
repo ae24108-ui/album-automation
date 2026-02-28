@@ -4,9 +4,9 @@ from docx.shared import Mm
 from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.enum.table import WD_ROW_HEIGHT_RULE
 
-#設定
-IMAGE_FOLDER = r"C:\Users\mentu\OneDrive\画像\アルバム用\processed"
-OUTPUT_FILE = r"C:\Users\mentu\OneDrive\画像\アルバム用\album.docx"
+#設定(入力フォルダ、出力フォルダのパスを入力してください)
+IMAGE_FOLDER = r""
+OUTPUT_FILE = r""
 
 ROWS = 3
 COLS = 3
@@ -58,7 +58,7 @@ def create_album():
             for cell in col.cells:
                 cell.width = Mm(CELL_WIDTH_MM)
 
-        #写真挿入(セルを指定→パラグラフを作成→ランを作成し,写真を挿入)
+        #写真挿入(cellを指定→paragraphを作成→runを作成し,pictureを挿入)
         for row in range(ROWS):
             for col in range(COLS):
                 if image_index >= total_images:
